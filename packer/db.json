@@ -3,23 +3,22 @@
         {
             "type": "googlecompute",
             "project_id": "{{user `project_id`}}",
-            "image_name": "reddit-db-base-{{timestamp}}",
-            "image_family": "reddit-db-base",
+            "image_name": "reddit-db-base-ansible-{{timestamp}}",
+            "image_family": "reddit-db-base-ansible",
             "source_image_family": "{{user `source_image_family`}}",
             "zone": "europe-west1-b",
             "ssh_username": "appuser",
             "machine_type": "{{user `machine_type`}}",
             "disk_size": "10",
             "disk_type": "pd-standard",
-            "image_description": "Mongo template small image",
+            "image_description": "Mongo template small image with ansible provisioners",
             "tags": "default"
         }
     ],
     "provisioners": [
         {
-            "type": "shell",
-            "script":"scripts/install_mongodb.sh",
-            "execute_command": "sudo {{.Path}}"
+          "type": "ansible",
+          "playbook_file": "ansible/packer_db.yml"
         }
     ]
 }
