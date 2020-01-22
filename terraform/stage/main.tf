@@ -48,3 +48,4 @@ resource "template_file" "dynamic_inventory" {
     db_ext_ip  = "${module.db.db_external_ip}"
   }
 }
+
