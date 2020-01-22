@@ -114,3 +114,22 @@ testapp_port = 9292
 3. `ansible-playbook -i dynamic_inventory.sh site.yml --check`
 4. `ansible-playbook -i dynamic_inventory.sh site.yml`
 5. `http://<external-ip>:9292`
+
+# Ansible-3
+1. Созданы отдельные роли app и db для деплоя провиженинга хостов.
+2. Добавлена реализация использования роли nginx proxy.
+3. Созданы окружения stage и production.
+4. Приложение теперь доступно по 80 порту.
+5. Добавлена роль по созданию пользователей с применением шифрования секретов через vault.
+6. В travis добавлены дополнительные проверки кода:
+ - packer validate для всех шаблонов;
+ - terraform validate и tflint для окружений stage и prod;
+ - ansible-lint для плейбуков Ansible
+7. Протестированы возможности утилиты trytravis.
+8. Добавлен бэйдж статуса прохождения тестов  travis README.md
+
+### Как использовать
+1. `cd terraform/stage && terraform apply -var-file="terraform.tfvars.example`
+2. `cd ansible`
+3. `ansible-playbook playbooks/site.yml --check`
+4. `ansible-playbook playbooks/site.yml`
