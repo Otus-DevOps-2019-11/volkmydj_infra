@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/Otus-DevOps-2019-11/volkmydj_infra.svg?branch=ansible-3)](https://travis-ci.com/Otus-DevOps-2019-11/volkmydj_infra)
+
 # volkmydj_infra
 
 bastion_IP = 35.225.27.208
