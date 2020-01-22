@@ -2,6 +2,7 @@ provider "google" {
   #version = "~> 2.5.0"
   project = var.project
   region  = var.region
+  credentials = var.credentials
 }
 
 module "storage-bucket-stage" {
