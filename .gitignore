@@ -16,6 +16,6 @@ vault.key
 .cache
 .pytest_cache
 Pipfile
-Pipfile.lock
+*.lock
 main.py
 venv
