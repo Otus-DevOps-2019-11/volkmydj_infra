@@ -18,7 +18,7 @@ variable zone {
 
 variable private_key {
   description = "Path to the private key used for ssh access"
-  default     = "~/.ssh/appuser"
+  default     = "/home/devops/.ssh/"
 }
 
 variable "db_reddit_ip" {
