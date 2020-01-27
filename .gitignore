@@ -17,14 +17,10 @@ vault.key
 .pytest_cache
 Pipfile
 *.lock
-main.py
 
 
 # Environments
-.env
 .venv
-env/
 venv/
-ENV/
 env.bak/
 venv.bak/
