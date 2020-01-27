@@ -18,3 +18,4 @@ vault.key
 Pipfile
 Pipfile.lock
 main.py
+venv
