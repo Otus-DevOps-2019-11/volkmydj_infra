@@ -17,6 +17,7 @@ vault.key
 .pytest_cache
 Pipfile
 *.lock
+ansible/roles/db/
 
 
 # Environments
