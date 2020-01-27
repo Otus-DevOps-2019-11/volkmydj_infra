@@ -7,6 +7,7 @@ provider "google" {
   version = "~> 2.15.0"
   project = var.project
   region  = var.region
+  credentials = var.credentials
 }
 
 provider "null" {

@@ -10,4 +10,3 @@ variable region {
 variable "credentials" {
   description = "Credentials"
 }
-
