@@ -1,5 +1,5 @@
 ---
-- name: Provision {app} for Packer images
+- name: Configure app hosts
   hosts: all
   become: true
   roles:

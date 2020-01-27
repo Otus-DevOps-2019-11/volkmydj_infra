@@ -1,5 +1,5 @@
 ---
-- name: Provision {db} for Packer images
+- name: Packer provision db
   hosts: all
   become: true
   roles:
