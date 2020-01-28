@@ -133,3 +133,18 @@ testapp_port = 9292
 2. `cd ansible`
 3. `ansible-playbook playbooks/site.yml --check`
 4. `ansible-playbook playbooks/site.yml`
+
+# Ansible-4
+1. Установлен Vagrant
+2. Создана локальная инфраструктура спомощью vagrant
+3. Vagrant настроен для проксирования nginx(*)
+4. Установлены зависисмоти для тестирования ролей
+5. Протестирована роль db
+6. Роль db вынесена в отдельный репозиторий (*)
+
+### Как использовать
+1. `cd ansible`
+2. `ansible-galaxy install -r environments/<env>/requirements.yml`
+3. `ansible-playbook playbooks/site.yml --check`
+4. `ansible-playbook playbooks/site.yml`
+

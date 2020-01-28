@@ -8,3 +8,20 @@
 *.retry
 jdauphant.nginx
 vault.key
+# Vagrant & molecule
+.vagrant
+*.log
+*.pyc
+.molecule
+.cache
+.pytest_cache
+Pipfile
+*.lock
+ansible/roles/db/
+
+
+# Environments
+.venv
+venv/
+env.bak/
+venv.bak/
